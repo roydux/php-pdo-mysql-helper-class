@@ -4,7 +4,7 @@ PHP pdo mysql helper class
 
 I add some codes to supports transaction.
 
-roydu
+roydux
 2014-04-18
 
 
@@ -12,11 +12,9 @@ Usage
 =====
 	Make sure you've change the configuration file config.php. 
 	Include config.php to your php code
-
-SELECT
+TRANSACTION
 ------
-
-**transaction**
+**about transaction**
 ```
 //this will start your transaction
 $db->begin_transaction();
@@ -26,6 +24,11 @@ $db->commit();
 //this will rollback your transaction.
 $db->rollback();
 ```
+
+SELECT
+------
+
+
 
 **standard query**
 ```
