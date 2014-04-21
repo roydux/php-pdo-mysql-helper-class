@@ -16,6 +16,17 @@ Usage
 SELECT
 ------
 
+**transaction**
+```
+//this will start your transaction
+$db->begin_transaction();
+//todo:your db logic.
+//this will commit your transaction.
+$db->commit();
+//this will rollback your transaction.
+$db->rollback();
+```
+
 **standard query**
 ```
 //this will get all records with username wildan
